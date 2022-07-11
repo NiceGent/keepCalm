@@ -1,0 +1,198 @@
+body {
+    font-family: "Gill Sans", "Gill Sans MT", "Arial";
+    margin: 0;
+    color: #fff;
+}
+
+/* Typography */
+
+h2,
+p {
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 4.3rem;   
+    font-weight: normal;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.customise-poster p {
+    font-size: 1rem;
+}
+
+.caption {
+    width: 400px;
+    word-wrap: break-word;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Layout */
+
+main {
+    background-color: #fff;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.poster {
+    padding: 30px 10px;
+    height: 600px;
+    width: 350px;
+    background-color: red;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    border: #fff 6px double;
+ 
+}
+
+.text {
+    text-align: center;
+}
+
+.customise-poster {
+    height: 600px;
+    width: 350px;
+    padding: 30px 10px;
+    background-color: grey;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    border-style: double;
+    border: 6px double black;
+}
+
+.bg-buttons,
+.img-buttons,
+.input-text {
+    padding: 0;
+    margin: 0;
+}
+
+/* buttons */
+
+.btn {
+    width: 5em;
+    height: 5em;
+    padding: 10px 0;
+    margin-top: 25px;
+    border: 5px solid gray;
+}
+
+.btn:focus,
+.btn:hover {
+    border: 5px solid black;
+}
+
+#red-btn {
+    background-color: red;
+}
+
+#yellow-btn {
+    background-color: #CEC110;
+}
+
+#blue-btn {
+    background-color: blue;
+}
+
+#green-btn {
+    background-color: green;
+}
+
+#crown-btn:focus,
+#crown-btn:hover,
+#css-btn:focus,
+#css-btn:hover,
+#html-btn:focus,
+#html-btn:hover,
+#js-btn:focus,
+#js-btn:hover {
+    border: 5px solid #fff;
+}
+
+#crown-btn {
+    background: black url(images/crown.png) no-repeat center;
+    background-size: 80%;
+    padding: 10px;
+}
+
+#css-btn {
+    background: black url(images/css.png) no-repeat center;
+    background-size: 80%;
+    padding: 10px;
+}
+
+#html-btn {
+    background: black url(images/html.png) no-repeat center;
+    background-size: 80%;
+    padding: 10px;
+}
+
+#js-btn {
+    background: black url(images/js.png) no-repeat center;
+    background-size: 80%;
+    padding: 10px;
+}
+
+#input-el {
+    color: black;
+    font-family: "Gill Sans", "Gill Sans MT", "Arial";
+    font-weight: bold;
+
+    display: flex;
+    width: 16em;
+    padding: 1em 2em;
+    border: 5px solid grey;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+#input-el:hover,
+#input-el:active {
+    border: 5px solid #F0F8FF;
+    background-color: #DCDCDC;
+}
+
+#html-icon,
+#css-icon,
+#js-icon {
+    display : none; 
+}
+
+.main {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+}
+
+@media(max-width: 700px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .poster {
+        margin-bottom: 50px;
+    }
+}
